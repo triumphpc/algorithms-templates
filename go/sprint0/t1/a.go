@@ -6,7 +6,7 @@ import (
 )
 
 func getSum(a int, b int) int {
-	// Ваше решение
+	return a + b
 }
 
 func main() {
@@ -19,5 +19,6 @@ func readInt() int {
 	var aString string
 	fmt.Scan(&aString)
 	a, _ := strconv.Atoi(aString)
+
 	return a
 }
