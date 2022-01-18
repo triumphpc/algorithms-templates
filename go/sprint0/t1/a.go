@@ -13,6 +13,7 @@ func main() {
 	a := readInt()
 	b := readInt()
 	fmt.Println(getSum(a, b))
+
 }
 
 func readInt() int {

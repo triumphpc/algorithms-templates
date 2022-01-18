@@ -7,16 +7,27 @@ import (
 	"strings"
 )
 
-func movingAverage(array []int, windowSize int) []float64 {
-	// Ваше решение
+func zip(a []int, b []int) []int {
+	l := len(a)
+	result := make([]int, l*2)
+
+	i := 0
+	for k, v := range a {
+		result[i] = v
+		i++
+		result[i] = b[k]
+		i++
+	}
+
+	return result
 }
 
 func main() {
 	scanner := makeScanner()
 	readInt(scanner)
-	array := readArray(scanner)
-	windowSize := readInt(scanner)
-	printArray(movingAverage(array, windowSize))
+	a := readArray(scanner)
+	b := readArray(scanner)
+	printArray(zip(a, b))
 }
 
 func makeScanner() *bufio.Scanner {
@@ -27,10 +38,10 @@ func makeScanner() *bufio.Scanner {
 	return scanner
 }
 
-func printArray(arr []float64) {
+func printArray(arr []int) {
 	writer := bufio.NewWriter(os.Stdout)
 	for i := 0; i < len(arr); i++ {
-		writer.WriteString(strconv.FormatFloat(arr[i], 'f', 8, 64))
+		writer.WriteString(strconv.Itoa(arr[i]))
 		writer.WriteString(" ")
 	}
 	writer.Flush()
