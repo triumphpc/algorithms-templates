@@ -10,8 +10,24 @@ import (
 
 // Если ответ существует, верните список из двух элементов
 // Если нет - то верните пустой список
+//https://practicum.yandex.ru/trainer/algorithms/lesson/29fdc9f9-9476-491e-9297-596ad7d03d4b/
+
 func twoSum(array []int, targetSum int) []int {
-	// Ваше решение
+	var result []int
+	store := make(map[int]bool)
+
+	for _, v := range array {
+		y := targetSum - v
+		if ok := store[y]; ok {
+			result = append(result, v, y)
+
+			return result
+		} else {
+			store[v] = true
+		}
+	}
+
+	return result
 }
 
 func main() {
