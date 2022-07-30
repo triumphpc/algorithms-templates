@@ -1,3 +1,6 @@
+// Алгоритм "Застежка-молния"
+// https://contest.yandex.ru/contest/26365/problems/B/
+
 package main
 
 import (

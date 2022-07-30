@@ -1,3 +1,6 @@
+// https://practicum.yandex.ru/trainer/algorithms/lesson/29fdc9f9-9476-491e-9297-596ad7d03d4b/
+// Алгоритм A + B
+//
 package main
 
 import (

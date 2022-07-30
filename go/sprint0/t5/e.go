@@ -1,3 +1,9 @@
+// Алгоритм "Двух сумм" Оптимизированный алгоритм
+//
+// https://practicum.yandex.ru/trainer/algorithms/lesson/29fdc9f9-9476-491e-9297-596ad7d03d4b/
+// https://contest.yandex.ru/contest/26365/problems/E/
+//
+
 package main
 
 import (
@@ -7,10 +13,6 @@ import (
 	"strconv"
 	"strings"
 )
-
-// Если ответ существует, верните список из двух элементов
-// Если нет - то верните пустой список
-//https://practicum.yandex.ru/trainer/algorithms/lesson/29fdc9f9-9476-491e-9297-596ad7d03d4b/
 
 func twoSum(array []int, targetSum int) []int {
 	var result []int

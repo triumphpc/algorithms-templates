@@ -1,3 +1,7 @@
+// Алгоритм "Скользящее среднее" или оптимизированный "Метод двух указателей"
+// https://practicum.yandex.ru/trainer/algorithms/lesson/9536d99f-2148-47c2-aa33-f9dcda7384e6/
+// https://contest.yandex.ru/contest/26365/problems/C/
+
 package main
 
 import (

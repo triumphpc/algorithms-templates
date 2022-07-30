@@ -1,3 +1,7 @@
+// Алгоритм "Двух сумм" - наивный алгоритм
+// https://practicum.yandex.ru/trainer/algorithms/lesson/99be9f47-9445-4d66-97e8-74d28a2f809d/
+// https://contest.yandex.ru/contest/26365/problems/D/
+
 package main
 
 import (
@@ -8,14 +12,12 @@ import (
 	"strings"
 )
 
-// Если ответ существует, верните список из двух элементов
-// Если нет - то верните пустой список
-// https://practicum.yandex.ru/trainer/algorithms/lesson/99be9f47-9445-4d66-97e8-74d28a2f809d/
 func twoSum(array []int, targetSum int) []int {
 	var result []int
 
 	l := len(array)
 
+	// Наивный алгоритм - реализация
 	for i := 0; i < l; i++ {
 		for j := i + 1; j < l; j++ {
 			if array[i]+array[j] == targetSum {
